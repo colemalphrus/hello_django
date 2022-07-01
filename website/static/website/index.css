@@ -1,16 +1,13 @@
 body {
-    background-color: aqua;
+    background-color: gray;
 }
 .cool_header {
-    color: red;
+    color: black;
     text-align: center;
 }
 .cool_sub_header {
-    color: brown;
-    text-align: right;
-}
-.cool_sub_header_2 {
-    color: brown;
+    color: black;
+    text-align: center;
 }
 
 .grid_container {
