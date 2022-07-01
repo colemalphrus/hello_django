@@ -5,4 +5,7 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return render(request, 'index.html', {})
+    data = {
+        'cool_title': '😂this title is coming from python😂'
+    }
+    return render(request, 'index.html', data)
