@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hello World</title>
+    <link rel="stylesheet" href="{% static 'website/index.css' %}" />
+{#    <link rel="icon" href="images/favicon.png" />#}
+  </head>
+
+  <body>
+    <h1 class="cool_header">THIS is Really Ugly</h1>
+    <h2 class="cool_sub_header">You dorks should make this look better</h2>
+    <h2 class="cool_sub_header_2">like this is really bad</h2>
+    <div id="instructions" class="coles_instructions">
+        <ul>
+            <h3>Coles Instructions <button onclick="cool_javascript()">Click me</button></h3>
+            <h3>This shows what JAVASCRIPT can do</h3>
+            <li>
+                1: Update the index.html file it's here: '/hello_django/website/templates' add your
+                own content and play around with the html structure this is the skeleton of the apps
+            </li>
+            <li>
+                2: Update the index.css file it's here: '/hello_django/website/static/website' add your own
+                style to make the elements more prettier
+            </li>
+        </ul>
+    </div>
+    <div class="grid_container">
+        <div>
+            Thing 1 (your profile)
+        </div>
+        <div>
+            Thing 2 (your profile)
+        </div>
+    </div>
+    <script>
+        var toggle = true;
+        function cool_javascript(){
+            let el = document.getElementById('instructions')
+            if( toggle ){
+                el.style.backgroundColor = 'black'
+                el.style.color = 'white'
+                toggle = false;
+            } else {
+                el.style.backgroundColor = 'white'
+                el.style.color = 'black'
+                toggle = true;
+            }
+        }
+    </script>
+  </body>
+</html>
